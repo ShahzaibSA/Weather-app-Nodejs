@@ -35,7 +35,7 @@ weatherForm.addEventListener("submit", (e) => {
         errorMsgDiv.style.display = 'block';
         errorMsgDiv.innerHTML = `<h3>Error:  Please enter your location..!!</h3>`
     } else {
-        const url = `http://localhost:5000/weather?location=${location}`;
+        const url = `/weather?location=${location}`;
 
         showLocation.textContent = "Loading...";
         showTemperature.textContent = "Loading...";
