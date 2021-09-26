@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #error-msg{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Weather App</h3>
+    </div> 
+    <form>
+        <input type="text" placeholder="Location" id="location-input">
+        <button>Search</button>
+    </form>
+
+    <div id="error-msg"></div>
+
+    <div id="weather-info">
+        <ul>
+            <li>Location: <h3 id="location">***</h3></li>
+            <li>Temperature: <h3 id="temperature">***</h3></li>
+            <li>Weather: <h3 id="weather">***</h3></li>
+            <li>Humidity: <h3 id="humidity">***</h3></li>
+            <li>Feels Like: <h3 id="feels">***</h3></li>
+        </ul>
+    </div>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
