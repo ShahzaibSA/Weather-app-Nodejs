@@ -27,6 +27,8 @@ const showHumidity = document.querySelector("#humidity");
 const showFeels = document.querySelector("#feels");
 
 weatherForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
     const location = locationInput.value;
 
     if (location.length === 0) {
@@ -62,7 +64,6 @@ weatherForm.addEventListener("submit", (e) => {
         });
     }
 
-    e.preventDefault();
 });
 
 
